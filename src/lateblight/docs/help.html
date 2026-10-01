@@ -1,0 +1,240 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Heiko Apel">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (WinNT; U) [Netscape]">
+   <title>PhytMod - Help</title>
+</head>
+<body text="#000000" bgcolor="#FFFFCC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<b><font size=+2>How to use PhytMod</font></b>
+<p><u><font color="#000000">Menu</font> <b>File</b></u>
+<table WIDTH="100%" >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Open</b></td>
+
+<td>Opens a previously saved PhytMod file, i.e. a saved Model definition
+and runs the model</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>Save</b></td>
+
+<td>Save the current model definition</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Save As</b></td>
+
+<td>Save the current model definition to file</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Import</b></td>
+
+<td>Import measured data of the visible infection from a space/tab delimited
+ASCII file for display in the visible infection graphic. It assumes data
+entries in columns <u>without</u> column headers, with the first column
+indicating the day of measurement and the second the data of the normalized
+visible infection (I + D). If more than two columns are present in the
+file, the rest are neglected.</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Export</b></td>
+
+<td>Exports the data in the data table sheet as a space delimited ASCII
+file for use in other programs, e.g. Excel, Mathematica, ...</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Exit</b></td>
+
+<td>Exits PhytMod</td>
+</tr>
+</table>
+
+<p><u>Menu <b>Model</b></u>
+<table WIDTH="100%" >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Run new</b></td>
+
+<td>Runs the model and redraws both graphic windows and fills the model data
+table sheet with the calculated data.</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Run same</b></td>
+
+<td>Runs the model and draws a <u>temporary</u> graph over the visible
+graph window, i.e. all stages or visible infection. These graphs will vanish
+as soon as the window is resized, moved, etc. Also, the model data table sheet
+is
+<b>not</b> filled with data of "same" runs. Use 'Run new' instead.</td>
+</tr>
+</table>
+
+<p><u>Menu <b>Help</b></u>
+<table WIDTH="100%" >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Help</b></td>
+
+<td>Opens this window.</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>Documentation</b></td>
+
+<td>Documentation of model theory and approches</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="150"><b>About</b></td>
+
+<td>Version and author information</td>
+</tr>
+</table>
+
+<p><b><u>Model definition</u></b>
+<br>&nbsp;
+<table WIDTH="100%" >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>latent period l</b></td>
+
+<td>specify the length of the latent period in days; double value</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>infect. period i</b></td>
+
+<td>specifiy the length of the infectious period in days; double value</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>infection rate R</b></td>
+
+<td>specifiy the infection rate; double value</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>initial infection</b></td>
+
+<td>specify the initial infection; double value, should be realistically
+low, i.e. &lt; 0.05</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>runtime</b></td>
+
+<td>specify the length of the model run (tmax) in days; integer value</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>stepsize</b></td>
+
+<td>specify the stepsize of the calculation in days; restricted to 0.1,
+0.2, 0.5 and 1.0</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>Standard Model</b>
+<br>Button</td>
+
+<td>selects the standard model (see documentation) for model run. With
+this option the fungicide applications are <b>not</b> available.</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>Phytophthora model</b>
+<br>Button</td>
+
+<td>selects the Phytophthtora model (see documentation) for model run.
+With this option the lesion grwoth, sporulation intensity and fungicide
+applications are available.</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>lesion growth W</b></td>
+
+<td>specify the linear lesion growth parameter; double value, restricted
+to &lt;= 1</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>sporulation intensity</b></td>
+
+<td>specify the sporulation intensity of the aporulation function (see
+documentation); double value</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><u>Fungicide application</u></td>
+
+<td>defines the fungicide application type</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150">Selection "<b>no</b>'"</td>
+
+<td>no rungicide application</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150">Selection "<b>protective</b>"</td>
+
+<td>selects the protective fungicide Mancozeb for application</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150">Selection "<b>curative</b>"</td>
+
+<td>selects the curative and protective fungicide mix Mancozeb + Metalaxyl
+for application</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><u>application days</u></td>
+
+<td>defines the fungicide aplication days&nbsp;</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>interval</b> selection</td>
+
+<td>selects a regurlarly application scheme</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150">interval input field</td>
+
+<td>defined the interval length in days; integer value</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>start</b></td>
+
+<td>defines the starting days of the interval application scheme</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150"><b>user</b> selection</td>
+
+<td>select user defined application days</td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td WIDTH="150">user input field</td>
+
+<td>defines the application days, integer values, comma seperated</td>
+</tr>
+
+<tr>
+<td><b>show imported data</b></td>
+
+<td>selects whether imported data of the visible infection are shown in
+the visible infection graph or not</td>
+</tr>
+</table>
+
+</body>
+</html>

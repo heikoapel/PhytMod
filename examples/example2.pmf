@@ -1,0 +1,14 @@
+3# //lat
+11# //inf
+0.33# //R
+0.01# //initial
+90# //tmax
+1# //dt
+0.3# //W
+3# //sp_int
+20# //interval
+20# //start
+7,14,21,28,35# //appDays
+0# //model selection
+2# //psm selection
+1# //psm mode selection

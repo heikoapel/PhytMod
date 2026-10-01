@@ -1,0 +1,15 @@
+# build output
+build/
+/PhytMod.jar
+*.class
+
+# editor / IDE backups
+*~
+*.tmp
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# JVM crash logs
+hs_err_pid*.log
