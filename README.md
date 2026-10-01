@@ -9,6 +9,8 @@ The Java code is associated to this publication:
 Apel, H., Paudyal, M.S., and Richter, O. (2003). Evaluation of treatment strategies of the late blight Phytophthora infestans in Nepal by population dynamics modelling. Environmental Modelling and Software 18(4), 355-364. doi: https://doi.org/10.1016/S1364-8152(02)00106-8.
 ```   
 
+![PhytMod main window showing a simulated Phytophthora epidemic](images/screenshot.gif)
+
 ## Models
 
 PhytMod solves a delay differential equation model with four state variables: **uninfected**, **latent**, **infectious** and **dead** (removed) host tissue. The available model variants are:
