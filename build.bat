@@ -7,7 +7,7 @@ if exist build rmdir /s /q build
 mkdir build
 
 rem compile
-javac -nowarn -encoding UTF-8 -cp lib\optimization.jar -d build src\lateblight\*.java || exit /b 1
+javac --release 8 -nowarn -encoding UTF-8 -cp lib\optimization.jar -d build src\lateblight\*.java || exit /b 1
 
 rem copy resources (icons, help pages) next to the classes
 xcopy /q /y src\lateblight\*.gif build\lateblight\ >nul

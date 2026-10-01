@@ -2,7 +2,12 @@
 
 PhytMod is a Java desktop application for simulating plant disease epidemics, especially potato late blight caused by *Phytophthora infestans*.
 
-It was written in 2001–2002 by Heiko Apel at the Institute of Geoecology, TU Braunschweig, Germany. This repository archives the original source code. Apart from a change of character encoding to UTF-8, the code has not been modified.
+It was written in 2001–2002 by Heiko Apel at the Institute of Geoecology, TU Braunschweig, Germany. This repository archives the original source code. Apart from a change of character encoding to UTF-8, the code has not been modified.   
+
+The Java code is associated to this publication:   
+```
+Apel, H., Paudyal, M.S., and Richter, O. (2003). Evaluation of treatment strategies of the late blight Phytophthora infestans in Nepal by population dynamics modelling. Environmental Modelling and Software 18(4), 355-364. doi: https://doi.org/10.1016/S1364-8152(02)00106-8.
+```   
 
 ## Models
 
@@ -45,7 +50,7 @@ On other systems:
 
 ```sh
 mkdir -p build
-javac -nowarn -encoding UTF-8 -cp lib/optimization.jar -d build src/lateblight/*.java
+javac --release 8 -nowarn -encoding UTF-8 -cp lib/optimization.jar -d build src/lateblight/*.java
 cp src/lateblight/*.gif build/lateblight/ && cp -r src/lateblight/docs build/lateblight/
 (cd build && jar xf ../lib/optimization.jar && rm -rf META-INF)
 jar cfe PhytMod.jar lateblight.Phyt_model -C build .
