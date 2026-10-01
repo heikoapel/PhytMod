@@ -1,6 +1,5 @@
 # build output
 build/
-/PhytMod.jar
 *.class
 
 # editor / IDE backups

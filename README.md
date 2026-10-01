@@ -37,9 +37,17 @@ All code is in the package `lateblight` under [`src/lateblight/`](src/lateblight
 
 The GUI was originally built with Borland JBuilder 5 and JDK 1.3. The many small `Phyt_Frame_*_actionAdapter` classes are JBuilder-generated event handlers.
 
-## Building and running
+## Running
 
-You need a JDK (Java 8 or newer; tested with JDK 25). On Windows:
+A ready-to-run `PhytMod.jar` (version 1.1, 2002) is included in this repository. It needs Java 8 or newer:
+
+```
+java -jar PhytMod.jar
+```
+
+## Building
+
+To build `PhytMod.jar` yourself, you need a JDK (Java 8 or newer; tested with JDK 25). On Windows:
 
 ```
 build.bat
