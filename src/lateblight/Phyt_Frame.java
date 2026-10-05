@@ -372,6 +372,7 @@ public class Phyt_Frame extends JFrame {
     jTextField_Int.setPreferredSize(new Dimension(32, 15));
     jTextField_Int.setToolTipText("specify application interval length");
     jTextField_Int.setText("7");
+    jLabel_start.setForeground(Color.black);
     jLabel_start.setText("start");
     jTextField_start.setEnabled(false);
     jTextField_start.setMaximumSize(new Dimension(20, 15));

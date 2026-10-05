@@ -44,6 +44,12 @@ public class Phyt_model {
     try {
       //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
       UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+      // draw text of disabled components in black instead of gray
+      javax.swing.plaf.ColorUIResource black = new javax.swing.plaf.ColorUIResource(Color.black);
+      UIManager.put("RadioButton.disabledText", black);
+      UIManager.put("CheckBox.disabledText", black);
+      UIManager.put("Label.disabledForeground", black);
+      UIManager.put("TextField.inactiveForeground", black);
 
     }
     catch(Exception e) {
